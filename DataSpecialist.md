@@ -26,9 +26,11 @@
   <span style="font-size: 1.2em; font-weight: 600;">PrediX</span>
 </p>
 
-## Job Description: Data Specialist- part-time (50% FTE)
+### Job Description
+### Data Specialist: part-time (50% FTE)
+<br>
 
-#### The Company
+### The Company
 
 PrediX is a medical startup developing an AI-driven virtual biopsy
 platform to help revolutionize cancer care. By enabling faster, more
@@ -43,7 +45,7 @@ cutting-edge platform will accelerate the entire patient journey, from
 initial detection to follow-up care, improving patient outcomes and
 significantly reducing costs.
 
-#### The role
+### The Role
 
 We are seeking a Data Specialist to support the development of PrediX's
 radiology-pathology database and help transform complex clinical data
