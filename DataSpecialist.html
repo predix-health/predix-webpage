@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>DataSpecialist</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+</head>
+<body>
+<style>
+  body {
+    background-color: white;
+    color: black;
+    font-family: "Aptos", "Segoe UI", system-ui, -apple-system, "Helvetica Neue", Arial, sans-serif;
+  }
+  a {
+    color: #0F4761;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    color: #0F4761;
+    font-family: "Aptos", "Segoe UI", system-ui, -apple-system, "Helvetica Neue", Arial, sans-serif;
+  }
+  h2 {
+    margin-top: 1.6em;
+    margin-bottom: 0.3em;
+  }
+
+  h3 {
+    margin-top: 0.5em;
+    margin-bottom: 0.3em;
+  }
+</style>
+<p align="center">
+<img src="inverted_logo.png" alt="Description" width="150"><br> <span
+style="font-size: 1.2em; font-weight: 600;">PrediX</span>
+</p>
+<h2 id="job-description-data-specialist--part-time-50-fte">Job
+Description: Data Specialist- part-time (50% FTE)</h2>
+<h4 id="the-company">The Company</h4>
+<p>PrediX is a medical startup developing an AI-driven virtual biopsy
+platform to help revolutionize cancer care. By enabling faster, more
+precise, and less invasive diagnostics, we aim to improve patient
+outcomes while reducing costs.</p>
+<p>Current patient diagnosis and management methods are invasive, slow
+and costly, often leading to delayed treatment and mortality. PrediX
+transforms this process by providing rapid, precise and non-invasive
+AI-powered diagnostics, using proprietary multimodal algorithms. Our
+cutting-edge platform will accelerate the entire patient journey, from
+initial detection to follow-up care, improving patient outcomes and
+significantly reducing costs.</p>
+<h4 id="the-role">The role</h4>
+<p>We are seeking a Data Specialist to support the development of
+PrediX’s radiology-pathology database and help transform complex
+clinical data into structured, high-quality datasets for AI
+development.</p>
+<p>You will play a central role in case pairing, data curation, metadata
+organization, quality control, and workflow automation. This role is
+ideal for someone who combines <strong>clinical orientation with
+structured data thinking and practical technical ability.</strong></p>
+<p>This is a hybrid, part-time position (50% FTE), reporting to the
+CTO.</p>
+<p><strong>Location:</strong> Ramat Gan<br />
+<strong>Department:</strong> R&amp;D / Data<br />
+<strong>Start date:</strong> Immediate</p>
+<div style="margin:  1em 0 1em 0;">
+<hr style="border: 0; border-top: 2px solid black; margin: 0;" />
+</div>
+<h3 id="key-responsibilities">Key Responsibilities</h3>
+<h4 id="clinical-data-curation-and-pairing">Clinical Data Curation and
+Pairing</h4>
+<ul>
+<li>Review radiology and pathology reports, metadata, and related
+clinical information to support case-level pairing and annotation.</li>
+<li>Build, maintain, and update structured case records linking imaging,
+reports, pathology, and metadata into consistent, traceable
+datasets.</li>
+<li>Maintain and update the company SQL database, including creating,
+editing, correcting, and validating case-level records and metadata to
+support reliable downstream research use.</li>
+<li>Apply structured logic to identify matches, inconsistencies, missing
+data, and quality issues across datasets.</li>
+</ul>
+<h4 id="workflow-automation-and-data-quality">Workflow Automation and
+Data Quality</h4>
+<ul>
+<li>Turn repetitive manual workflows into repeatable queries, scripts,
+checks, templates, or AI-assisted workflows.</li>
+<li>Run quality-control checks on data, metadata, and pairing
+logic.</li>
+<li>Use modern data tools, AI assistants, and chatbots productively to
+improve efficiency and reduce manual work.</li>
+</ul>
+<h4 id="cross-functional-collaboration">Cross-Functional
+Collaboration</h4>
+<ul>
+<li>Collaborate closely with clinicians, pathologists, and the data team
+to improve case selection, pairing logic, and dataset usability.</li>
+<li>Work in compliance with privacy, IRB, and site-specific data
+handling requirements.</li>
+</ul>
+<div style="margin:  1em 0 1em 0;">
+<hr style="border: 0; border-top: 2px solid black; margin: 0;" />
+</div>
+<h3 id="qualifications">Qualifications</h3>
+<h4 id="educational-background">Educational Background</h4>
+<ul>
+<li>Students only: 3rd year and above in Medicine, 3rd or 4th year B.Sc.
+students, or M.Sc. students in Life Sciences, Biology, Medical or Health
+Sciences, Bioinformatics or Biomedical Engineering.</li>
+</ul>
+<h4 id="experience">Experience</h4>
+<ul>
+<li>Experience working with structured datasets, metadata, or
+operational data workflows.</li>
+<li>Experience reading or working with clinical, biological, radiology,
+or pathology-related information.</li>
+</ul>
+<h4 id="technical-skills">Technical Skills</h4>
+<ul>
+<li>Comfort working hands-on with structured data, metadata tables, and
+repetitive workflows.</li>
+<li>Practical experience with at least some of the following:
+<strong>SQL, Python, spreadsheets with advanced formulas or logic,
+notebooks, or simple automation tools</strong>.</li>
+<li>Confidence using <strong>AI assistants, chatbots, or LLM
+tools</strong> productively to accelerate technical tasks, troubleshoot,
+and identify the right tools for the job.</li>
+<li>Ability to reason systematically about data and apply logic to
+optimize data quality and usability.</li>
+</ul>
+<h4 id="soft-skills">Soft Skills</h4>
+<ul>
+<li>Strong attention to detail and a highly structured way of
+thinking.</li>
+<li>Ability to read and summarize clinical information and use it to
+guide annotation decisions.</li>
+<li>Strong documentation and QA mindset.</li>
+<li>Ability to work independently while collaborating closely with
+technical and clinical stakeholders.</li>
+</ul>
+<div style="margin:  1em 0 1em 0;">
+<hr style="border: 0; border-top: 2px solid black; margin: 0;" />
+</div>
+<h3 id="how-to-apply">How to Apply</h3>
+<p>Email your CV to <a
+href="mailto:jobs@predix-ai.com"><strong>jobs@predix-ai.com</strong></a>.</p>
+</body>
+</html>
