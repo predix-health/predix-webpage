@@ -103,7 +103,7 @@ This is a hybrid, part-time position (50% FTE), reporting to the CTO.
 
 #### Educational Background
 
-- Students only: 3rd year and above in Medicine, 3rd or 4th year B.Sc.
+- Students only: 2nd year and above in Medicine, 3rd or 4th year B.Sc.
   students, or M.Sc. students in Life Sciences, Biology, Medical or
   Health Sciences, Bioinformatics or Biomedical Engineering.
 
